@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire choix de spécialité BTS SIO & métier et poursuite étude</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Questionnaire spécialité <span id="SISR"> SISR </span>ou<span id="SLAM"> SLAM </span>BTS SIO</h1>
+    </header>
+
+    <section class="Questionnaire">
+        <div class="question-box">
+    
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-bar-sisr"><span>SISR</span></div>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-bar-slam"><span>SLAM</span></div>
+                </div>
+            </div>
+    
+            <!-- Question 1 -->
+            <div class="question" id="question-1">
+                <label>Si tu devais participer à un projet informatique, quel rôle préfèrerais-tu avoir ?</label>
+                <div class="options">
+                    <label for="q1a">
+                        <input type="radio" name="q1" value="slam" id="q1a"> Concevoir, développer et maintenir des applications logicielles adaptées aux besoins des utilisateurs
+                    </label>
+                    <label for="q1b">
+                        <input type="radio" name="q1" value="sisr" id="q1b"> Être responsable de la mise en place et de la gestion des infrastructures, des réseaux et de la sécurité
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(1)">Valider</button>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="question" id="question-2">
+                <label>Aimes-tu travailler sur la création d'un sites web ?</label>
+                <div class="options">
+                    <label for="q2a">
+                        <input type="radio" name="q2" value="slam" id="q2a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q2c">
+                        <input type="radio" name="q2" id="q2c"> Je ne sais pas
+                    </label>
+                    <label for="q2b">
+                        <input type="radio" name="q2" value="sisr" id="q2b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(2)">Valider</button>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="question" id="question-3">
+                <label>Quel aspect te passionne le plus dans le domaine de l'informatique ?</label>
+                <div class="options">
+                    <label for="q3a">
+                        <input type="radio" name="q3" value="slam" id="q3a"> La création d'applications et de solutions logicielles pour répondre à des besoins spécifiques
+                    </label>
+                    <label for="q3b">
+                        <input type="radio" name="q3" value="sisr" id="q3b"> La gestion des serveurs, des réseaux et de la sécurité des systèmes
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(3)">Valider</button>
+            </div>
+    
+            <!-- Question 4 -->
+            <div class="question" id="question-4">
+                <label>Est-ce que tu préfères travailler sur la maintenance et l'optimisation des infrastructures informatiques ou développer des logiciels pour des applications métier ?</label>
+                <div class="options">
+                    <label for="q4a">
+                        <input type="radio" name="q4" value="slam" id="q4a"> Concevoir et développer des logiciels sur mesure pour les entreprises
+                    </label>
+                    <label for="q4b">
+                        <input type="radio" name="q4" value="sisr" id="q4b"> Travailler sur des infrastructures, des réseaux et des systèmes
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(4)">Valider</button>
+            </div>
+    
+            <!-- Question 5 -->
+            <div class="question" id="question-5">
+                <label>Est-ce que tu préfères développer des applications qui interagissent avec des utilisateurs ou gérer la structure technique d'un réseau ?</label>
+                <div class="options">
+                    <label for="q5a">
+                        <input type="radio" name="q5" value="slam" id="q5a"> Développer des applications logicielles utilisées directement par les utilisateurs
+                    </label>
+                    <label for="q5b">
+                        <input type="radio" name="q5" value="sisr" id="q5b"> Gérer la configuration des infrastructures réseau et assurer leur sécurité
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(5)">Valider</button>
+            </div>
+    
+            <!-- Question 6 -->
+            <div class="question" id="question-6">
+                <label>Quel type d’environnement de travail te correspondrait le mieux ?</label>
+                <div class="options">
+                    <label for="q6a">
+                        <input type="radio" name="q6" value="slam" id="q6a"> Travailler dans un environnement où tu gères des infrastructures réseaux et où tu garantis la sécurité des systèmes
+                    </label>
+                    <label for="q6b">
+                        <input type="radio" name="q6" value="sisr" id="q6b"> Travailler sur des projets de développement logiciel et programmer des applications
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(6)">Valider</button>
+            </div>
+    
+            <!-- Question 7 -->
+            <div class="question" id="question-7">
+                <label>Aimes-tu concevoir et programmer des applications destinées à résoudre des besoins spécifiques dans des entreprises ?</label>
+                <div class="options">
+                    <label for="q7a">
+                        <input type="radio" name="q7" value="slam" id="q7a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q7c">
+                        <input type="radio" name="q7" id="q7c"> Je ne sais pas
+                    </label>
+                    <label for="q7b">
+                        <input type="radio" name="q7" value="sisr" id="q7b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(7)">Valider</button>
+            </div>
+    
+            <!-- Question 8 -->
+            <div class="question" id="question-8">
+                <label>Es-tu intéressé par la gestion des réseaux et des systèmes informatiques ?</label>
+                <div class="options">
+                    <label for="q8a">
+                        <input type="radio" name="q8" value="sisr" id="q8a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q8c">
+                        <input type="radio" name="q8" id="q8c"> Je ne sais pas
+                    </label>
+                    <label for="q8b">
+                        <input type="radio" name="q8" value="slam" id="q8b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(8)">Valider</button>
+            </div>
+    
+            <!-- Question 9 -->
+            <div class="question" id="question-9">
+                <label>Es-tu intéressé par la gestion et la sécurité des réseaux d'une entreprise ?</label>
+                <div class="options">
+                    <label for="q9a">
+                        <input type="radio" name="q9" value="sisr" id="q9a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q9c">
+                        <input type="radio" name="q9" id="q9c"> Je ne sais pas
+                    </label>
+                    <label for="q9b">
+                        <input type="radio" name="q9" value="slam" id="q9b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(9)">Valider</button>
+            </div>
+    
+            <!-- Question 10 -->
+            <div class="question" id="question-10">
+                <label>Est-ce que la gestion et la maintenance des réseaux informatiques, comme la configuration de routeurs et la sécurité des systèmes, t'intéressent ?</label>
+                <div class="options">
+                    <label for="q10a">
+                        <input type="radio" name="q10" value="sisr" id="q10a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q10c">
+                        <input type="radio" name="q10" id="q10c"> Je ne sais pas
+                    </label>
+                    <label for="q10b">
+                        <input type="radio" name="q10" value="slam" id="q10b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(10)">Valider</button>
+            </div>
+    
+            <!-- Question 11 -->
+            <div class="question" id="question-11">
+                <label>Aimerais-tu développer des applications pour des téléphones ou tablettes ?</label>
+                <div class="options">
+                    <label for="q11a">
+                        <input type="radio" name="q11" value="slam" id="q11a"> Oui, j'adore ça !
+                    </label>
+                    <label for="q11c">
+                        <input type="radio" name="q11" id="q11c"> Je ne sais pas
+                    </label>
+                    <label for="q11b">
+                        <input type="radio" name="q11" value="sisr" id="q11b"> Non, ce n'est pas vraiment mon truc
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(11)">Valider</button>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question" id="question-12">
+                <label>Quel rôle préfères-tu dans un projet informatique en équipe ?</label>
+                <div class="options">
+                    <label for="q12a">
+                        <input type="radio" name="q12" value="slam" id="q12a"> Participer à la conception et au développement d'applications logicielles pour résoudre des problèmes spécifiques
+                    </label>
+                    <label for="q12b">
+                        <input type="radio" name="q12" value="sisr" id="q12b"> Assurer le bon fonctionnement des systèmes et des réseaux, en gérant l'infrastructure et la sécurité
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion(12)">Valider</button>
+            </div>
+    
+    
+            <div class="results" id="results"></div>
+        </div>
+    </section>
+
+    <section class="metier">
+        <!-- Section Métier SISR -->
+        <div class="SISR">
+            <h1>Métier pour <span id="SISR"> SISR</span></h1>
+            <div class="metier-card">
+                <img src="img/Administrateur_systèmes_et_résea.jpg" alt="Administrateur / administratrice Systèmes et Réseaux" class="metier-image"> 
+                <h3>Administrateur / administratrice Systèmes et Réseaux</h3> 
+                <p>Gère et optimise les infrastructures informatiques et réseaux d’une entreprise.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Technicien_de_Maintenance.jpg" alt="Technicien / Technicienne de Maintenance" class="metier-image">
+                <h3>Technicien / Technicienne de Maintenance</h3>
+                <p>Assure la réparation et l’entretien des équipements informatiques.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Technicien_d_Infrastructure.jpg" alt="Technicien / Technicienne d’Infrastructure" class="metier-image">
+                <h3>Technicien / Technicienne d’Infrastructure</h3>
+                <p>Installe, configure et maintient les équipements et systèmes informatiques.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Support_système_et_réseaux.jpg" alt="Support Système et Réseaux" class="metier-image">  
+                <h3>Support Système et Réseaux</h3>
+                <p>Assure l’assistance technique et la résolution des problèmes liés aux systèmes et réseaux.</p>
+            </div>
+        </div>
+        <!-- Section Métier SLAM -->
+        <div class="SLAM">
+            <h1>Métier pour <span id="SLAM"> SLAM</span></h1>
+            <div class="metier-card">
+                <img src="img/developpeur_web.jpg" alt="Développeur / développeuse Web" class="metier-image">
+                <h3>Développeur / développeuse Web</h3>
+                <p>Crée des sites internet et applications web.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Développeur_applications_mobiles.jpg" alt="Développeur / développeuse d'applications mobiles" class="metier-image"> 
+                <h3>Développeur / développeuse d'applications mobiles</h3>
+                <p>Développe des applications pour smartphones.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Responsable_de_services_applicatifs.jpg" alt="Responsable de Services Applicatifs" class="metier-image">
+                <h3>Responsable de Services Applicatifs</h3>
+                <p>Gère et supervise le déploiement et le bon fonctionnement des applications au sein de l’entreprise.</p>
+            </div>
+            <div class="metier-card">
+                <img src="img/Chargé_d_etudes_informatiques.jpg" alt="Chargé / Chargée d'Études Informatiques" class="metier-image">
+                <h3>Chargé / Chargée d'Études Informatiques</h3>
+                <p>Analyse les besoins informatiques et propose des solutions adaptées aux projets de l'entreprise.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="etude">
+        <!-- Section Études SISR -->
+        <div class="SISR">
+            <h1>Poursuite d'études <span id="SISR"> SISR</span></h1>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image BTS SIO SISR" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Licence Pro Administration des Systèmes et Réseaux</h3>
+                        <p>Compétences en gestion des réseaux, administration des serveurs et sécurité des systèmes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image Bachelor SISR" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Bachelor en Systèmes et Réseaux Informatiques</h3>
+                        <p>Spécialisation en installation, configuration et gestion des réseaux et systèmes informatiques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image Master Informatique SISR" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Master en Cybersécurité ou Ingénierie des Systèmes et Réseaux</h3>
+                        <p>Expertise en cybersécurité et gestion des infrastructures critiques, avec un focus sur la protection des données.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section Études SLAM -->
+        <div class="SLAM">
+            <h1>Poursuite d'étude <span id="SLAM"> SLAM</span></h1>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image BTS SIO" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Licence Pro Développement Web ou Applications Mobiles</h3>
+                        <p>Spécialisation en développement d'applications web et mobiles, avec des technologies comme JavaScript, React et Flutter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image Bachelor Web" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Bachelor en Développement Informatique ou Logiciel</h3>
+                        <p>Spécialisation en conception d’applications, gestion de projets et maîtrise des langages de programmation et bases de données.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="etude-card">
+                <div class="card-content">
+                    <img src="img/formation.png" alt="image Master Informatique" class="etude-image">
+                    <div class="card-text">
+                        <h3>Formation Master en Informatique, spécialité Développement Logiciel</h3> 
+                        <p>Perfectionnement en conception de logiciels complexes et gestion de projets IT avec des technologies avancées.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
